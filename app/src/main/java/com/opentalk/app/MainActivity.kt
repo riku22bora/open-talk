@@ -1,8 +1,12 @@
 package com.opentalk.app
 
+import android.animation.ValueAnimator
 import android.annotation.SuppressLint
 import android.content.Intent
+import android.graphics.Color
 import android.os.Bundle
+import android.text.SpannableString
+import android.text.style.ForegroundColorSpan
 import android.webkit.WebSettings
 import android.webkit.WebView
 import android.webkit.WebViewClient
@@ -18,15 +22,33 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val madeBy = findViewById<TextView>(R.id.madeBy)
-        val colors = intArrayOf(0xFF9B59B6.toInt(), 0xFF3498DB.toInt(), 0xFFFFFFFF.toInt(), 0xFFE74C3C.toInt(), 0xFFFF2D55.toInt())
-        var i = 0
-        madeBy.postDelayed(object : Runnable {
-            override fun run() {
-                madeBy.setTextColor(colors[i % colors.size])
-                i++
-                madeBy.postDelayed(this, 600)
-            }
-        }, 600)
+        val fullText = "made by -: riku 🍒"
+        val spannable = SpannableString(fullText)
+        val start = fullText.indexOf("riku")
+        val end = start + 4
+
+        val colors = intArrayOf(
+            Color.parseColor("#9B59B6"),
+            Color.parseColor("#3498DB"),
+            Color.parseColor("#FFFFFF"),
+            Color.parseColor("#E74C3C"),
+            Color.parseColor("#FF2D55")
+        )
+
+        val animator = ValueAnimator.ofInt(0, colors.size - 1)
+        animator.duration = 2000
+        animator.repeatCount = ValueAnimator.INFINITE
+        animator.repeatMode = ValueAnimator.RESTART
+        animator.addUpdateListener { anim ->
+            val index = anim.animatedValue as Int
+            spannable.setSpan(
+                ForegroundColorSpan(colors[index]),
+                start, end,
+                SpannableString.SPAN_EXCLUSIVE_EXCLUSIVE
+            )
+            madeBy.text = spannable
+        }
+        animator.start()
 
         findViewById<Button>(R.id.btnNormal).setOnClickListener {
             openWeb("https://perchance.org/ai-chat")
@@ -64,6 +86,8 @@ class WebActivity : AppCompatActivity() {
         settings.databaseEnabled = true
         settings.loadWithOverviewMode = true
         settings.useWideViewPort = true
+        settings.mediaPlaybackRequiresUserGesture = false
+        settings.javaScriptCanOpenWindowsAutomatically = true
 
         webView.webViewClient = WebViewClient()
         val url = intent.getStringExtra("url") ?: "https://perchance.org/ai-chat"
