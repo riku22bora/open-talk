@@ -15,6 +15,16 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        val madeBy = findViewById<TextView>(R.id.madeBy)
+        val colors = intArrayOf(0xFF9B59B6.toInt(), 0xFF3498DB.toInt(), 0xFFFFFFFF.toInt(), 0xFFE74C3C.toInt(), 0xFFFF2D55.toInt())
+        var i = 0
+        madeBy.postDelayed(object : Runnable {
+            override fun run() {
+                madeBy.setTextColor(colors[i % colors.size])
+                i++
+                madeBy.postDelayed(this, 600)
+            }
+        }, 600)
 
         findViewById<Button>(R.id.btnNormal).setOnClickListener {
             openWeb("https://perchance.org/ai-chat")
@@ -23,7 +33,10 @@ class MainActivity : AppCompatActivity() {
             openWeb("https://perchance.org/ai-character-chat")
         }
         findViewById<Button>(R.id.btnBetter).setOnClickListener {
-            openWeb("https://perchance.org/chat-w-better-pics-001test")
+        findViewById<Button>(R.id.btnAdvance).setOnClickListener {
+            openWeb("https://perchance.org/advanced-chat-ai")
+        }
+            openWeb("https://perchance.org/chat-w-better-pics")
         }
     }
 
@@ -41,6 +54,16 @@ class WebActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_webview)
+        val madeBy = findViewById<TextView>(R.id.madeBy)
+        val colors = intArrayOf(0xFF9B59B6.toInt(), 0xFF3498DB.toInt(), 0xFFFFFFFF.toInt(), 0xFFE74C3C.toInt(), 0xFFFF2D55.toInt())
+        var i = 0
+        madeBy.postDelayed(object : Runnable {
+            override fun run() {
+                madeBy.setTextColor(colors[i % colors.size])
+                i++
+                madeBy.postDelayed(this, 600)
+            }
+        }, 600)
 
         webView = findViewById(R.id.webView)
         val settings = webView.settings
