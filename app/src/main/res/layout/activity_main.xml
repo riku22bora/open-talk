@@ -1,85 +1,129 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="#0D0D0D"
-    android:gravity="center"
-    android:padding="24dp">
+    android:background="#0A0A0A">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="welcome my bad king 🤤🍆🍑😋🥵"
-        android:textSize="36sp"
-        android:textColor="#FF2D55"
-        android:textStyle="bold"
-        android:fontFamily="sans-serif-black"
-        android:layout_marginBottom="16dp"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="all milf is Ready and waiting for your action so show your dick 🍆power boss😉"
-        android:textSize="12sp"
-        android:textColor="#AAAAAA"
+        android:orientation="vertical"
         android:gravity="center"
-        android:layout_marginBottom="32dp"/>
+        android:padding="20dp">
 
-    <Button
-        android:id="@+id/btnNormal"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:text="Dirty indian MILFs 🥵"
-        android:textSize="18sp"
-        android:textColor="#FFFFFF"
-        android:backgroundTint="#FF2D55"
-        android:fontFamily="sans-serif-black"
-        android:textStyle="bold"
-        android:layout_marginBottom="16dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="welcome my bad king 🤤🍆🍑😋🥵"
+            android:textSize="32sp"
+            android:textColor="#FF0066"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="8dp"/>
 
-    <Button
-        android:id="@+id/btnPro"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:text="MILFs universe 🍑"
-        android:textSize="18sp"
-        android:textColor="#FFFFFF"
-        android:backgroundTint="#9B59B6"
-        android:fontFamily="sans-serif-black"
-        android:textStyle="bold"
-        android:layout_marginBottom="16dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="all milf is Ready and waiting for your action so show your dick 🍆power boss😉"
+            android:textSize="13sp"
+            android:textColor="#888888"
+            android:gravity="center"
+            android:layout_marginBottom="28dp"/>
 
-    <Button
-        android:id="@+id/btnBetter"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:text="My dreams woman's 💋🥵👌"
-        android:textSize="18sp"
-        android:textColor="#FFFFFF"
-        android:backgroundTint="#E74C3C"
-        android:fontFamily="sans-serif-black"
-        android:textStyle="bold"
-        android:layout_marginBottom="16dp"/>
+        <Button
+            android:id="@+id/btnNormal"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:text="Dirty indian MILFs 🥵"
+            android:textSize="17sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#FF0066"
+            android:fontFamily="sans-serif-black"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp"/>
 
-    <Button
-        android:id="@+id/btnAdvance"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:text="Very Hard task MILFs 😈🤤🔥"
-        android:textSize="18sp"
-        android:textColor="#FFFFFF"
-        android:backgroundTint="#3498DB"
-        android:fontFamily="sans-serif-black"
-        android:textStyle="bold"/>
+        <Button
+            android:id="@+id/btnPro"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:text="MILFs universe 🍑"
+            android:textSize="17sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#9B00FF"
+            android:fontFamily="sans-serif-black"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp"/>
 
-    <TextView
-        android:id="@+id/madeBy"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="made by -: riku 🍒"
-        android:textSize="14sp"
-        android:textColor="#AAAAAA"
-        android:textStyle="bold"
-        android:layout_marginTop="48dp"/>
-</LinearLayout>
+        <Button
+            android:id="@+id/btnBetter"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:text="My dreams woman's 💋🥵👌"
+            android:textSize="17sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#FF3333"
+            android:fontFamily="sans-serif-black"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp"/>
+
+        <Button
+            android:id="@+id/btnAdvance"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:text="Very Hard task MILFs 😈🤤🔥"
+            android:textSize="17sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#0066FF"
+            android:fontFamily="sans-serif-black"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp"/>
+
+        <Button
+            android:id="@+id/btnStrict"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:text="STRICT MILFS 💦"
+            android:textSize="17sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#8E44AD"
+            android:fontFamily="sans-serif-black"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp"/>
+
+        <Button
+            android:id="@+id/btnAnut"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:text="Anut MILFs 😉😋"
+            android:textSize="17sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#E91E63"
+            android:fontFamily="sans-serif-black"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp"/>
+
+        <Button
+            android:id="@+id/btnTrending"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:text="All trending MILFs universal multiverse 😈💋💦"
+            android:textSize="15sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#C0392B"
+            android:fontFamily="sans-serif-black"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:id="@+id/madeBy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="made by -: riku 🍒"
+            android:textSize="13sp"
+            android:textColor="#555555"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"/>
+    </LinearLayout>
+</ScrollView>

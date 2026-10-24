@@ -54,12 +54,21 @@ class MainActivity : AppCompatActivity() {
             openWeb("https://perchance.org/ai-chat")
         }
         findViewById<Button>(R.id.btnPro).setOnClickListener {
-            openWeb("https://perchance.org/ai-character-chat")
+            openWeb("https://perchance.org/amoled-chat")
         }
         findViewById<Button>(R.id.btnBetter).setOnClickListener {
-            openWeb("https://perchance.org/chat-w-better-pics")
+            openWeb("https://perchance.org/chat-tts")
         }
         findViewById<Button>(R.id.btnAdvance).setOnClickListener {
+        findViewById<Button>(R.id.btnStrict).setOnClickListener {
+        findViewById<Button>(R.id.btnAnut).setOnClickListener {
+        findViewById<Button>(R.id.btnTrending).setOnClickListener {
+            openWeb("https://perchance.org/peter-photo-chat")
+        }
+            openWeb("https://perchance.org/ai-chat-app-simulator")
+        }
+            openWeb("https://perchance.org/chat-final")
+        }
             openWeb("https://perchance.org/advanced-chat-ai")
         }
     }
